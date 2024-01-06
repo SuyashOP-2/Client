@@ -1,0 +1,37 @@
+.search-functionality {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .search-header{
+    text-align: center ;
+  }
+  .search-functionality > div {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: justify;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+  }
+  
+  .product-img {
+    align-items: center;
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .search-functionality > div {
+      width: calc(50% - 20px);
+    }
+  }

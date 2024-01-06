@@ -1,0 +1,129 @@
+/* Default styles for larger screens */
+.Product-filter-div {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.filter-price-div {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  align-items: flex-start;
+  font-family: 'inter';
+}
+
+.prices-display {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  gap: 2rem;
+}
+
+.filter-price-div {
+  font-size: 2rem;
+}
+
+.price-actual {
+  cursor: pointer;
+  height: 2rem;
+  width: 100%;
+  background-color: #6f6f73;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.Product-content-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-display-list {
+  box-sizing: border-box;
+  padding-left: 2rem;
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-img {
+  width: 70%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #333;
+  
+}
+.button-add-to-remove{
+   display: flex;
+   justify-content: space-between;
+   gap: 1.5rem;
+}
+
+.add-to-cart {
+  cursor: pointer;
+  height: 2rem;
+  width: 50%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.remove-from-cart{
+  cursor: pointer;
+  height: 2rem;
+  width: 50%;
+  background-color: #da2e70;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+@media (max-width: 768px) {
+  .Product-filter-div {
+      flex-direction: column;
+      padding-left: 0;
+  }
+  .prices-display{
+    /* display: flex; */
+    box-sizing: border-box;
+    /* gap: 1rem; */
+    padding-left: 1rem;
+  }
+
+  .filter-price-div {
+      align-items: center;
+  }
+
+  .price-actual {
+      width: auto;
+  }
+
+  .product-display-list {
+      flex: 0 0 calc(50% - 20px);
+  }
+}

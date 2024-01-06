@@ -1,0 +1,19 @@
+.slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    padding-top: 2.2rem;
+}
+.slider-images{
+   width: 80%;
+   height: 50%;
+   border-radius: 10px;
+}
+.prevbutton{
+    cursor: pointer;
+}
+.nextbutton{
+    cursor: pointer;
+}
